@@ -33,6 +33,7 @@ def predict():
     # Round the output to 2 decimal places
     output = round(prediction[0], 2)
 
+
     # If the output is negative, the values entered are unreasonable to the context of the application
     # If the output is greater than 0, return prediction
     if output < 0:
@@ -45,4 +46,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
